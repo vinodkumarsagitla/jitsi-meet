@@ -24,9 +24,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven {
-            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
-        }
+        maven { url 'https://jitpack.io' }
     }
 }
 ```
@@ -36,7 +34,7 @@ Dependency definitions belong in the individual module `build.gradle` files:
 ```gradle
 dependencies {
     // (other dependencies)
-    implementation ('org.jitsi.react:jitsi-meet-sdk:2.+') { transitive = true }
+    implementation 'com.github.vinodkumarsagitla:jitsi-meet:1.0.0'
 }
 ```
 
